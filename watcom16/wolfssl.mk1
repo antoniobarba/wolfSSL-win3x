@@ -1,0 +1,618 @@
+!define BLANK ""
+C:\VBoxShare\wolfssl\watcom16\crl.obj : C:\VBoxShare\wolfssl\src\crl.c .AUTO&
+DEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\crl.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CONF&
+IG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq -o&
+d -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\dtls.obj : C:\VBoxShare\wolfssl\src\dtls.c .AU&
+TODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\dtls.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CON&
+FIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq -&
+od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\dtls13.obj : C:\VBoxShare\wolfssl\src\dtls13.c&
+ .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\dtls13.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_C&
+ONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq&
+ -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\internal.obj : C:\VBoxShare\wolfssl\src\intern&
+al.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\internal.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE&
+_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -&
+zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\internal2.obj : C:\VBoxShare\wolfssl\src\inter&
+nal2.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\internal2.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAV&
+E_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL &
+-zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\keys.obj : C:\VBoxShare\wolfssl\src\keys.c .AU&
+TODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\keys.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CON&
+FIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq -&
+od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ocsp.obj : C:\VBoxShare\wolfssl\src\ocsp.c .AU&
+TODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\ocsp.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CON&
+FIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq -&
+od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ssl.obj : C:\VBoxShare\wolfssl\src\ssl.c .AUTO&
+DEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\ssl.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CONF&
+IG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq -o&
+d -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\tls.obj : C:\VBoxShare\wolfssl\src\tls.c .AUTO&
+DEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\tls.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CONF&
+IG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq -o&
+d -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\tls13.obj : C:\VBoxShare\wolfssl\src\tls13.c .&
+AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\tls13.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_CO&
+NFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq &
+-od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wolfio.obj : C:\VBoxShare\wolfssl\src\wolfio.c&
+ .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\src\wolfio.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -dHAVE_C&
+ONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_DLL -zq&
+ -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\aes.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\a&
+es.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\aes.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\arc4.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\&
+arc4.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\arc4.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 &
+-dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL&
+_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\asn.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\a&
+sn.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\asn.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\blake2b.obj : C:\VBoxShare\wolfssl\wolfcrypt\s&
+rc\blake2b.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\blake2b.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e&
+25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLF&
+SSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\blake2s.obj : C:\VBoxShare\wolfssl\wolfcrypt\s&
+rc\blake2s.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\blake2s.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e&
+25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLF&
+SSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\camellia.obj : C:\VBoxShare\wolfssl\wolfcrypt\&
+src\camellia.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\camellia.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -&
+e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOL&
+FSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\chacha.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\chacha.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\chacha.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\chacha20_poly1305.obj : C:\VBoxShare\wolfssl\w&
+olfcrypt\src\chacha20_poly1305.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\chacha20_poly1305.c -i="C:\WATCOM/h;C:\WATCOM/h/win;.&
+./" -w0 -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWI&
+N16 -dWOLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\cmac.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\&
+cmac.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\cmac.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 &
+-dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL&
+_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\coding.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\coding.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\coding.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\cpuid.obj : C:\VBoxShare\wolfssl\wolfcrypt\src&
+\cpuid.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\cpuid.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25&
+ -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSS&
+L_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\curve25519.obj : C:\VBoxShare\wolfssl\wolfcryp&
+t\src\curve25519.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\curve25519.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0&
+ -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dW&
+OLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\curve448.obj : C:\VBoxShare\wolfssl\wolfcrypt\&
+src\curve448.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\curve448.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -&
+e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOL&
+FSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\des3.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\&
+des3.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\des3.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 &
+-dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL&
+_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\dh.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\dh&
+.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\dh.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -d&
+HAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_D&
+LL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\dsa.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\d&
+sa.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\dsa.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ecc.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\e&
+cc.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\ecc.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ed25519.obj : C:\VBoxShare\wolfssl\wolfcrypt\s&
+rc\ed25519.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\ed25519.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e&
+25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLF&
+SSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ed448.obj : C:\VBoxShare\wolfssl\wolfcrypt\src&
+\ed448.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\ed448.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25&
+ -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSS&
+L_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\error.obj : C:\VBoxShare\wolfssl\wolfcrypt\src&
+\error.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\error.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25&
+ -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSS&
+L_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\fe_low_mem.obj : C:\VBoxShare\wolfssl\wolfcryp&
+t\src\fe_low_mem.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\fe_low_mem.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0&
+ -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dW&
+OLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\fe_operations.obj : C:\VBoxShare\wolfssl\wolfc&
+rypt\src\fe_operations.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\fe_operations.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" &
+-w0 -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 &
+-dWOLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ge_low_mem.obj : C:\VBoxShare\wolfssl\wolfcryp&
+t\src\ge_low_mem.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\ge_low_mem.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0&
+ -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dW&
+OLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ge_operations.obj : C:\VBoxShare\wolfssl\wolfc&
+rypt\src\ge_operations.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\ge_operations.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" &
+-w0 -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 &
+-dWOLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\hash.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\&
+hash.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\hash.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 &
+-dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL&
+_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\hmac.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\&
+hmac.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\hmac.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 &
+-dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL&
+_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\integer.obj : C:\VBoxShare\wolfssl\wolfcrypt\s&
+rc\integer.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\integer.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e&
+25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLF&
+SSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\kdf.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\k&
+df.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\kdf.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\logging.obj : C:\VBoxShare\wolfssl\wolfcrypt\s&
+rc\logging.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\logging.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e&
+25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLF&
+SSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\md2.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\m&
+d2.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\md2.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\md4.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\m&
+d4.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\md4.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\md5.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\m&
+d5.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\md5.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\memory.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\memory.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\memory.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\pkcs12.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\pkcs12.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\pkcs12.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\pkcs7.obj : C:\VBoxShare\wolfssl\wolfcrypt\src&
+\pkcs7.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\pkcs7.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25&
+ -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSS&
+L_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\poly1305.obj : C:\VBoxShare\wolfssl\wolfcrypt\&
+src\poly1305.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\poly1305.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -&
+e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOL&
+FSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\pwdbased.obj : C:\VBoxShare\wolfssl\wolfcrypt\&
+src\pwdbased.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\pwdbased.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -&
+e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOL&
+FSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\random.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\random.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\random.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\rc2.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\r&
+c2.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\rc2.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\ripemd.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\ripemd.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\ripemd.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\rsa.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\r&
+sa.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\rsa.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sha.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\s&
+ha.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sha.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sha256.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\sha256.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sha256.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sha3.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\&
+sha3.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sha3.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 &
+-dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL&
+_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sha512.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\sha512.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sha512.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\signature.obj : C:\VBoxShare\wolfssl\wolfcrypt&
+\src\signature.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\signature.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 &
+-e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWO&
+LFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sp_c32.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\sp_c32.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sp_c32.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sp_c64.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\sp_c64.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sp_c64.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sp_int.obj : C:\VBoxShare\wolfssl\wolfcrypt\sr&
+c\sp_int.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sp_int.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e2&
+5 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFS&
+SL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\sp_x86_64.obj : C:\VBoxShare\wolfssl\wolfcrypt&
+\src\sp_x86_64.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\sp_x86_64.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 &
+-e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWO&
+LFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\srp.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\s&
+rp.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\srp.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\tfm.obj : C:\VBoxShare\wolfssl\wolfcrypt\src\t&
+fm.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\tfm.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e25 -&
+dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLFSSL_&
+DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wc_encrypt.obj : C:\VBoxShare\wolfssl\wolfcryp&
+t\src\wc_encrypt.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\wc_encrypt.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0&
+ -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dW&
+OLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wc_pkcs11.obj : C:\VBoxShare\wolfssl\wolfcrypt&
+\src\wc_pkcs11.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\wc_pkcs11.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 &
+-e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWO&
+LFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wc_port.obj : C:\VBoxShare\wolfssl\wolfcrypt\s&
+rc\wc_port.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\wc_port.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -e&
+25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOLF&
+SSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\win16_port.obj : C:\VBoxShare\wolfssl\wolfcryp&
+t\src\win16_port.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\win16_port.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0&
+ -e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dW&
+OLFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wolfevent.obj : C:\VBoxShare\wolfssl\wolfcrypt&
+\src\wolfevent.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\wolfevent.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 &
+-e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWO&
+LFSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wolfmath.obj : C:\VBoxShare\wolfssl\wolfcrypt\&
+src\wolfmath.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ *wcc ..\wolfcrypt\src\wolfmath.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../" -w0 -&
+e25 -dHAVE_CONFIG_H -dWOLFSSL_USER_SETTINGS -dBUILDING_WOLFSSL -dWIN16 -dWOL&
+FSSL_DLL -zq -od -bd -zu -2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wolfssl.dll : C:\VBoxShare\wolfssl\watcom16\cr&
+l.obj C:\VBoxShare\wolfssl\watcom16\dtls.obj C:\VBoxShare\wolfssl\watcom16\d&
+tls13.obj C:\VBoxShare\wolfssl\watcom16\internal.obj C:\VBoxShare\wolfssl\wa&
+tcom16\internal2.obj C:\VBoxShare\wolfssl\watcom16\keys.obj C:\VBoxShare\wol&
+fssl\watcom16\ocsp.obj C:\VBoxShare\wolfssl\watcom16\ssl.obj C:\VBoxShare\wo&
+lfssl\watcom16\tls.obj C:\VBoxShare\wolfssl\watcom16\tls13.obj C:\VBoxShare\&
+wolfssl\watcom16\wolfio.obj C:\VBoxShare\wolfssl\watcom16\aes.obj C:\VBoxSha&
+re\wolfssl\watcom16\arc4.obj C:\VBoxShare\wolfssl\watcom16\asn.obj C:\VBoxSh&
+are\wolfssl\watcom16\blake2b.obj C:\VBoxShare\wolfssl\watcom16\blake2s.obj C&
+:\VBoxShare\wolfssl\watcom16\camellia.obj C:\VBoxShare\wolfssl\watcom16\chac&
+ha.obj C:\VBoxShare\wolfssl\watcom16\chacha20_poly1305.obj C:\VBoxShare\wolf&
+ssl\watcom16\cmac.obj C:\VBoxShare\wolfssl\watcom16\coding.obj C:\VBoxShare\&
+wolfssl\watcom16\cpuid.obj C:\VBoxShare\wolfssl\watcom16\curve25519.obj C:\V&
+BoxShare\wolfssl\watcom16\curve448.obj C:\VBoxShare\wolfssl\watcom16\des3.ob&
+j C:\VBoxShare\wolfssl\watcom16\dh.obj C:\VBoxShare\wolfssl\watcom16\dsa.obj&
+ C:\VBoxShare\wolfssl\watcom16\ecc.obj C:\VBoxShare\wolfssl\watcom16\ed25519&
+.obj C:\VBoxShare\wolfssl\watcom16\ed448.obj C:\VBoxShare\wolfssl\watcom16\e&
+rror.obj C:\VBoxShare\wolfssl\watcom16\fe_low_mem.obj C:\VBoxShare\wolfssl\w&
+atcom16\fe_operations.obj C:\VBoxShare\wolfssl\watcom16\ge_low_mem.obj C:\VB&
+oxShare\wolfssl\watcom16\ge_operations.obj C:\VBoxShare\wolfssl\watcom16\has&
+h.obj C:\VBoxShare\wolfssl\watcom16\hmac.obj C:\VBoxShare\wolfssl\watcom16\i&
+nteger.obj C:\VBoxShare\wolfssl\watcom16\kdf.obj C:\VBoxShare\wolfssl\watcom&
+16\logging.obj C:\VBoxShare\wolfssl\watcom16\md2.obj C:\VBoxShare\wolfssl\wa&
+tcom16\md4.obj C:\VBoxShare\wolfssl\watcom16\md5.obj C:\VBoxShare\wolfssl\wa&
+tcom16\memory.obj C:\VBoxShare\wolfssl\watcom16\pkcs12.obj C:\VBoxShare\wolf&
+ssl\watcom16\pkcs7.obj C:\VBoxShare\wolfssl\watcom16\poly1305.obj C:\VBoxSha&
+re\wolfssl\watcom16\pwdbased.obj C:\VBoxShare\wolfssl\watcom16\random.obj C:&
+\VBoxShare\wolfssl\watcom16\rc2.obj C:\VBoxShare\wolfssl\watcom16\ripemd.obj&
+ C:\VBoxShare\wolfssl\watcom16\rsa.obj C:\VBoxShare\wolfssl\watcom16\sha.obj&
+ C:\VBoxShare\wolfssl\watcom16\sha256.obj C:\VBoxShare\wolfssl\watcom16\sha3&
+.obj C:\VBoxShare\wolfssl\watcom16\sha512.obj C:\VBoxShare\wolfssl\watcom16\&
+signature.obj C:\VBoxShare\wolfssl\watcom16\sp_c32.obj C:\VBoxShare\wolfssl\&
+watcom16\sp_c64.obj C:\VBoxShare\wolfssl\watcom16\sp_int.obj C:\VBoxShare\wo&
+lfssl\watcom16\sp_x86_64.obj C:\VBoxShare\wolfssl\watcom16\srp.obj C:\VBoxSh&
+are\wolfssl\watcom16\tfm.obj C:\VBoxShare\wolfssl\watcom16\wc_encrypt.obj C:&
+\VBoxShare\wolfssl\watcom16\wc_pkcs11.obj C:\VBoxShare\wolfssl\watcom16\wc_p&
+ort.obj C:\VBoxShare\wolfssl\watcom16\win16_port.obj C:\VBoxShare\wolfssl\wa&
+tcom16\wolfevent.obj C:\VBoxShare\wolfssl\watcom16\wolfmath.obj .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16
+ @%write wolfssl.lk1 FIL crl.obj,dtls.obj,dtls13.obj,internal.obj,internal2.&
+obj,keys.obj,ocsp.obj,ssl.obj,tls.obj,tls13.obj,wolfio.obj,aes.obj,arc4.obj,&
+asn.obj,blake2b.obj,blake2s.obj,camellia.obj,chacha.obj,chacha20_poly1305.ob&
+j,cmac.obj,coding.obj,cpuid.obj,curve25519.obj,curve448.obj,des3.obj,dh.obj,&
+dsa.obj,ecc.obj,ed25519.obj,ed448.obj,error.obj,fe_low_mem.obj,fe_operations&
+.obj,ge_low_mem.obj,ge_operations.obj,hash.obj,hmac.obj,integer.obj,kdf.obj,&
+logging.obj,md2.obj,md4.obj,md5.obj,memory.obj,pkcs12.obj,pkcs7.obj,poly1305&
+.obj,pwdbased.obj,random.obj,rc2.obj,ripemd.obj,rsa.obj,sha.obj,sha256.obj,s&
+ha3.obj,sha512.obj,signature.obj,sp_c32.obj,sp_c64.obj,sp_int.obj,sp_x86_64.&
+obj,srp.obj,tfm.obj,wc_encrypt.obj,wc_pkcs11.obj,wc_port.obj,win16_port.obj,&
+wolfevent.obj,wolfmath.obj
+ @%append wolfssl.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b wolfssl.imp 
+ @%append wolfssl.lk1 LIBR wolfssl.imp
+!endif
+!ifneq BLANK ""
+ @%append wolfssl.lk1 op resource=
+!endif
+ *wlink name wolfssl d all sys windows_dll op m op maxe=25 op q op symf @wol&
+fssl.lk1
+!ifneq BLANK ""
+!endif
+ *wlib -q -n -b wolfssl.lib +wolfssl.dll
+

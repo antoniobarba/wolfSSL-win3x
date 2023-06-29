@@ -1,0 +1,57 @@
+!define BLANK ""
+C:\VBoxShare\wolfssl\watcom16\wingpt\connection.obj : C:\VBoxShare\wolfssl\w&
+atcom16\wingpt\connection.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16\wingpt
+ *wcc connection.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../../" -w4 -e25 -zq -od &
+-d2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wingpt\main.obj : C:\VBoxShare\wolfssl\watcom1&
+6\wingpt\main.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16\wingpt
+ *wcc main.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../../" -w4 -e25 -zq -od -d2 -b&
+t=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wingpt\statusbar.obj : C:\VBoxShare\wolfssl\wa&
+tcom16\wingpt\statusbar.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16\wingpt
+ *wcc statusbar.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../../" -w4 -e25 -zq -od -&
+d2 -bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wingpt\utils.obj : C:\VBoxShare\wolfssl\watcom&
+16\wingpt\utils.c .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16\wingpt
+ *wcc utils.c -i="C:\WATCOM/h;C:\WATCOM/h/win;../../" -w4 -e25 -zq -od -d2 -&
+bt=windows -fo=.obj -ml
+
+C:\VBoxShare\wolfssl\watcom16\wingpt\wingpt.res : C:\VBoxShare\wolfssl\watco&
+m16\wingpt\wingpt.rc .AUTODEPEND
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16\wingpt
+ *wrc wingpt.rc -bt=windows -i="$[:;C:\WATCOM/h;C:\WATCOM/h/win" -q -ad -r -&
+fo=wingpt.res
+
+C:\VBoxShare\wolfssl\watcom16\wingpt\wingpt.exe : C:\VBoxShare\wolfssl\watco&
+m16\wingpt\connection.obj C:\VBoxShare\wolfssl\watcom16\wingpt\main.obj C:\V&
+BoxShare\wolfssl\watcom16\wingpt\statusbar.obj C:\VBoxShare\wolfssl\watcom16&
+\wingpt\utils.obj C:\VBoxShare\wolfssl\watcom16\wingpt\wingpt.res .AUTODEPEN&
+D
+ @C:
+ cd C:\VBoxShare\wolfssl\watcom16\wingpt
+ @%write wingpt.lk1 FIL connection.obj,main.obj,statusbar.obj,utils.obj
+ @%append wingpt.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b wingpt.imp 
+ @%append wingpt.lk1 LIBR wingpt.imp
+!endif
+!ifneq BLANK "wingpt.res"
+ @%append wingpt.lk1 op resource=wingpt.res
+!endif
+ *wlink name wingpt d all sys windows op m libr winsock libr wolfssl op maxe&
+=25 op q op symf @wingpt.lk1
+!ifneq BLANK "wingpt.res"
+!endif
+
